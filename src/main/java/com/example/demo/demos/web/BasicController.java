@@ -10,11 +10,6 @@ public class BasicController {
         return "Hello " + name;
     }
 
-    @GetMapping("/html")
-    public String html() {
-        return "index.html";
-    }
-
     @PostMapping("/user")
     public User saveUser(@RequestBody User user) {
         return user;
